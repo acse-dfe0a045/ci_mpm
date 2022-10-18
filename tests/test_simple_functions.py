@@ -28,6 +28,6 @@ class TestSimpleFunctions(object):
         assert answer == expected
 
     @pytest.mark.parametrize("input, expected", [2, 0.909])
-    def test_sin(input, expected):
+    def test_sin(self, input, expected):
         answer = sinm(input, 7)
         assert math.isclose(answer, expected)
