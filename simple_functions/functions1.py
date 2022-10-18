@@ -1,6 +1,6 @@
 from functools import cache
 
-__all__ = ['my_sum', "factorial", "sin"]
+__all__ = ['my_sum', "factorial", "sinm"]
 
 
 def my_sum(iterable):
@@ -15,12 +15,12 @@ def factorial(n):
     return n * factorial(n-1) if n else 1
 
 
-def sin(x, terms=7):
+def sinm(x, terms=7):
     sum = 0
     for n in range(terms):
-        sum = lsum(x, n)
+        sum += lsum(x, n)
     return sum
 
 
 def lsum(x, n):
-    return ((-1) ** n) / factorial(2 * n + 1) * x ** (2 * n + 1)
+    return ((-1) ** n) * (x ** (2 * n + 1)) / factorial(2 * n + 1)
