@@ -27,7 +27,7 @@ class TestSimpleFunctions(object):
         answer = factorial(number)
         assert answer == expected
 
-    @pytest.mark.parametrize("number, expected", [0, 0])
+    @pytest.mark.parametrize("number, expected", [0, 0.0])
     def test_sin(number, expected):
         answer = sin(number)
         assert math.isclose(answer, expected)
