@@ -1,6 +1,6 @@
 import numpy as np
 
-from simple_functions import pi  # type: ignore
+from simple_functions import pi
 
 
 class TestPi(object):
