@@ -1,6 +1,6 @@
 import pytest
 
-from simple_functions import my_sum, factorial
+from simple_functions import factorial, my_sum
 
 
 class TestSimpleFunctions(object):
